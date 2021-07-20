@@ -11,8 +11,13 @@
     </extensions>
 
     <actions>
-        <action id="RunUntilStopped" class="com.github.zolotov.mijnintellij.listeners.RunUntilStoppedAction">
-            <add-to-group anchor="last" group-id="RunContextGroup"/>
-        </action>
+        <group>
+            <action id="RunUntilStopped" class="com.github.zolotov.mijnintellij.actions.RunUntilStoppedAction"/>
+            <action id="DebugUntilStopped" class="com.github.zolotov.mijnintellij.actions.DebugUntilStoppedAction"/>
+            <action id="RunOnce" class="com.github.zolotov.mijnintellij.actions.RunOnceAction"/>
+            <action id="DebugOnce" class="com.github.zolotov.mijnintellij.actions.DebugOnceAction"/>
+            <add-to-group anchor="before" relative-to-action="CreateRunConfiguration"
+                          group-id="RunContextGroupInner"/>
+        </group>
     </actions>
 </idea-plugin>
