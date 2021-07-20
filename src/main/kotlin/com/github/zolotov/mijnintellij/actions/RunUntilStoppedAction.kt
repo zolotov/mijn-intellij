@@ -27,12 +27,11 @@ abstract class RunDebugUntilStoppedAction(private val repeatMode: String, execut
     override fun updatePresentation(presentation: Presentation, actionText: String, context: ConfigurationContext) {
         super.updatePresentation(presentation, actionText, context)
         presentation.text = if (repeatMode == RepeatCount.ONCE) {
-             "${presentation.text} Once"
-        }
-        else {
+            "${presentation.text} Once"
+        } else {
             "${presentation.text} and Repeat $repeatMode"
         }
-        
+
     }
 }
 
