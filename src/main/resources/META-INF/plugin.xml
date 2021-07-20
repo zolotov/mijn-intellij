@@ -1,6 +1,6 @@
 <idea-plugin>
-    <id>com.github.zolotov.mijn-ide</id>
-    <name>Mijn IDE</name>
+    <id>com.github.zolotov.mijn-intellij</id>
+    <name>Mijn IntelliJ</name>
     <vendor>zolotov</vendor>
 
     <depends>com.intellij.modules.platform</depends>
